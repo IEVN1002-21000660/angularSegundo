@@ -103,38 +103,38 @@ export default class ZodiacoComponent implements OnInit {
   }
 
   obtenerSignoChino(ano: number): string {
-    const signos = [   
-      'Rata', 
-      'Buey', 
-      'Tigre', 
-      'Conejo',
-      'Dragon',
-      'Serpiente',
-      'Caballo', 
-      'Cabra', 
-      'Mono',
-      'Gallo', 
-      'Perro', 
-      'Jabalí'
-    ];
-    return signos[ano % 12];
-  }
+  const signos = [
+    'Mono',   // 0
+    'Gallo',  // 1
+    'Perro',  // 2
+    'Jabalí', // 3
+    'Rata',   // 4
+    'Buey',   // 5
+    'Tigre',  // 6
+    'Conejo', // 7
+    'Dragon', // 8
+    'Serpiente', // 9
+    'Caballo', // 10
+    'Cabra'   // 11
+  ];
+  return signos[ano % 12];
+}
 
   obtenerImagen(ano: number): string {
-    const signos = [
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/5-dragon-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/6-serpiente-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/7-caballo-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/8-cabra-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/9-mono-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/10-gallo-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/11-perro-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/12-cerdo-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/1-rata-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/2-buey-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/3-tigre-zodiaco-chino-1.jpg',
-      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/4-conejo-zodiaco-chino-1.jpg',
-    ];
-    return signos[ano % 12];
+    const imagenes = [
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/9-mono-zodiaco-chino-1.jpg', // Mono
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/10-gallo-zodiaco-chino-1.jpg', // Gallo
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/11-perro-zodiaco-chino-1.jpg', // Perro
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/12-cerdo-zodiaco-chino-1.jpg', // Jabalí
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/1-rata-zodiaco-chino-1.jpg',   // Rata
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/2-buey-zodiaco-chino-1.jpg',   // Buey
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/3-tigre-zodiaco-chino-1.jpg',  // Tigre
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/4-conejo-zodiaco-chino-1.jpg', // Conejo
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/5-dragon-zodiaco-chino-1.jpg', // Dragón
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/6-serpiente-zodiaco-chino-1.jpg', // Serpiente
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/7-caballo-zodiaco-chino-1.jpg', // Caballo
+      'https://www.elmagoarcano.com/wp-content/uploads/2017/10/8-cabra-zodiaco-chino-1.jpg'  // Cabra
+  ];
+  return imagenes[ano % 12];
   }
 }
